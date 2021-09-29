@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Web App – Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="main-div">
+            <h1>Simple Interest Calculator</h1>
+
+            <div class="forms">
+
+                Amount <input type="text" id="principal">  <br/>
+           
+                Interest :  <input type="range" min="1" max="20" value="10.25" step="0.25" class="slider" id="interest">
+                <span class="interest-disp">10.25%</span><br/>
+
+                No. of Years <input type="text" list="list-years" id="years"> 
+                <datalist id="list-years">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+            
+                <br><span id="result"></span><br>
+        
+                <button onclick="compute()">Compute Interest</button>
+
+            </div>
+
+            
+        </div>
+      
+        <footer>
+            &copy; BY Dhamini
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
